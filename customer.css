@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    font-family: Poppins !important;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.wrap img {
+    display: block;
+    margin-top: 20px;
+}
+
+.details {
+    text-decoration: none;
+    color: black;
+}
+
+.tab {
+    overflow: hidden;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.tab button:hover {
+    border-bottom: #F9BE00 2px solid;
+}
+
+.tab button.active {
+    border-bottom: #F9BE00 2px solid;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+}
+
+.tabcontent input {
+    border: .5px solid #ccc;
+    margin-top: 20px;
+}
+
+.btn_color {
+    background-color: #D9F6C2 !important;
+}
+
+.add {
+    padding-right: 450px !important;
+    padding-left: 100px !important;
+}
+
+.icons {
+    height: 20px;
+    width: 20px;
+}
+
+.example {
+    background-color: #ffffff;
+    width: 200px;
+    overflow-y: scroll;
+}
+
+.example::-webkit-scrollbar {
+    display: none;
+}
+
+.example {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+input[type="checkbox"] {
+    accent-color: #F9BE00;
+}
+
+.das_img {
+    height: 50px;
+    width: 50px;
+}
+
+#menu {
+    display: none;
+}

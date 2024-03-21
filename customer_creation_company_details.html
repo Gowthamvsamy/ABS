@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer creation</title>
+    <link rel="stylesheet" href="./customer.css">
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="./bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-1 bg-dark text-white sidenav" id="mySidenav" onclick="toggleNav()">
+                <img src="./images/ABS Logo.svg" class="mx-2 mt-4 mb-5" alt="">
+                <div class="wrap">
+                    <div class="d-flex"><img src="./images/Dashboard.svg" class="das_img" alt="404">
+                        <h5 class="mt-4 pt-2 ms-2" id="menu">Dashboard</h5>
+                    </div>
+                    <div class="d-flex"><img src="./images/Leads.svg" alt="404">
+                        <h5 class="mt-4 pt-2 ms-2 " id="menu">Leads</h5>
+                    </div>
+                    <div class="d-flex"><img src="./images/Customers.svg" alt="404">
+                        <h5 class="mt-4 pt-2 ms-2 " id="menu">Customers</h5>
+                    </div>
+                    <div class="d-flex"><img src="./images/Suppliers.svg" alt="404">
+                        <h5 class="mt-4 pt-2 ms-2 " id="menu">Suppliers</h5>
+                    </div>
+                    <div class="d-flex"><img src="./images/Vendor.svg" alt="404">
+                        <h5 class="mt-4 pt-2 ms-2 " id="menu">Vendor</h5>
+                    </div>
+                    <div class="d-flex"><img src="./images/Categories.svg" alt="404">
+                        <h5 class="mt-4 pt-2 ms-2 " id="menu">Categories</h5>
+                    </div>
+                    <div class="d-flex"><img src="./images/Inventory.svg" alt="404">
+                        <h5 class="mt-4 pt-2 ms-2 " id="menu">Inventory</h5>
+                    </div>
+                    <div class="d-flex"><img src="./images/Settings.svg" alt="404">
+                        <h5 class="mt-4 pt-2 ms-2 " id="menu">Settings</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col p-0 bodybox">
+                <div class="container-fluid bg-light py-3 d-flex">
+                    <div class="d-flex">
+                        <img src="./images/Toggle.svg" alt="404" class="me-3">
+                        <form class="d-flex">
+                            <div class="input-group">
+                                <span class="input-group-text bg-white border-end-0"><i class="fa fa-search"></i></span>
+                                <input class="form-control me-2 border-start-0" type="text" placeholder="Search">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="d-flex ms-auto">
+                        <div class="">
+                            <img src="./images/Frame 35215.svg" alt="404">
+                            <img src="./images/Frame 35214.svg" alt="404">
+                        </div>
+                        <div class="dropdown mx-3">
+                            <button type="button" class="btn bg-white dropdown-toggle" data-bs-toggle="dropdown">
+                                <img src="./images/ABS Logo black.svg" alt="">ABS erp
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Link 1</a></li>
+                                <li><a class="dropdown-item" href="#">Link 2</a></li>
+                                <li><a class="dropdown-item" href="#">Link 3</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <button type="button" class="btn bg-white dropdown-toggle" data-bs-toggle="dropdown">
+                                <img src="./images/user 1.svg" alt="404"> Manoj kumar
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Link 1</a></li>
+                                <li><a class="dropdown-item" href="#">Link 2</a></li>
+                                <li><a class="dropdown-item" href="#">Link 3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <h6 class="m-3">Customer Creation</h6>
+
+                    <div class="tab px-3 border-bottom">
+                        <button class="tablinks py-0" onclick="openDetails(event, 'Details')" id="defaultOpen">Company
+                            Details</button>
+                        <button class="tablinks py-0" onclick="openDetails(event, 'Billing')">Billing & Shipping
+                            Details</button>
+                        <button class="tablinks py-0" onclick="openDetails(event, 'KYC')">KYC Documents</button>
+                    </div>
+
+                    <div id="Details" class="tabcontent px-3">
+                        <form action="">
+                            <h6 class="mt-2 mb-0">Company Details</h6>
+                            <div class="row">
+                                <div class="row row-cols-2 row-cols-md-4 row-cols-lg-4">
+                                    <div class="col"><input type="text" class="py-1 px-2 w-100 bg-light rounded"
+                                            placeholder="Company Name<span>*"></div>
+                                    <div class="col"><input type="text" class="py-1 px-2 w-100 bg-light rounded"
+                                            placeholder="GSTIN Number*"></div>
+                                    <div class="col"><input type="text" class="py-1 px-2 w-100 bg-light rounded"
+                                            placeholder="Import Export Code*"></div>
+                                    <div class="col"><input type="text" class="py-1 px-2 w-100 bg-light rounded"
+                                            placeholder="Phone Number*"></div>
+                                    <div class="col"><input type="text" class="py-1 px-2 w-100 bg-light rounded"
+                                            placeholder="Company Name*"></div>
+                                    <div class="col"><input type="text" class="py-1 px-2 w-100 bg-light rounded"
+                                            placeholder="GSTIN Number*"></div>
+                                </div>
+                            </div>
+
+                            <h6 class="mt-3 mb-0">Address Details</h6>
+                            <div class="row">
+                                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2">
+                                    <div class="col"><input type="text" class="p-2 py-3 w-100 bg-light rounded"
+                                            placeholder="Address Line 1*"></div>
+                                    <div class="col"><input type="text" class="p-2 py-3 w-100 bg-light rounded"
+                                            placeholder="Address Line 2*"></div>
+                                </div>
+                                <div class="row w-75">
+                                    <div class="col"><input type="text" class="py-1 px-2 w-100 bg-light rounded"
+                                            placeholder="Phone Number*"></div>
+                                    <div class="col"><input type="text" class="py-1 px-2 w-100 bg-light rounded"
+                                            placeholder="Company Name*"></div>
+                                    <div class="col"><input type="text" class="py-1 px-2 w-100 bg-light rounded"
+                                            placeholder="GSTIN Number*"></div>
+                                </div>
+                            </div>
+
+                            <h6 class="mt-3 mb-0">Contact Person</h6>
+                            <div class="row">
+                                <div class="row row-cols-2 row-cols-md-4 row-cols-lg-4">
+                                    <div class="col"><input type="text" class="py-1 px-2 w-100 bg-light rounded"
+                                            placeholder="POC Name*"></div>
+                                    <div class="col"><input type="text" class="py-1 px-2 w-100 bg-light rounded"
+                                            placeholder="Job Title*"></div>
+                                    <div class="col"><input type="text" class="py-1 px-2 w-100 bg-light rounded"
+                                            placeholder="Contact Number 1*"></div>
+                                    <div class="col"><input type="text" class="py-1 px-2 w-100 bg-light rounded"
+                                            placeholder="Contact Number 2*"></div>
+                                    <div class="col"><input type="text" class="py-1 px-2 w-100 bg-light rounded"
+                                            placeholder="Contact E-mail ID*"></div>
+                                </div>
+                            </div>
+
+                            <h6 class="mt-3 mb-0">Address Details</h6>
+                            <div class="row">
+                                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-3">
+                                    <div class="col"><input type="text" class="py-1 px-2 w-100 bg-light rounded"
+                                            placeholder="Authorised Person Name*"></div>
+                                    <div class="col"><input type="text" class="py-1 px-2 w-100 bg-light rounded"
+                                            placeholder="Authorised Person Designation*"></div>
+                                    <div class="col"><input type="text" class="py-1 px-2 w-100 bg-light rounded"
+                                            placeholder="Authorised Person Contact Number*"></div>
+                                    <div class="col"><input type="text" class="py-1 px-2 w-100 bg-light rounded"
+                                            placeholder="Authorised Person Contact Number*"></div>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="d-flex justify-content-center gap-5 mt-5 mb-3">
+                            <button class="btn border border-dark "><a href="./customer_creation.html"
+                                    class="details">Cancel</a></button>
+                            <button class="btn btn-dark text-white"><a href="./customer_creation.html"
+                                    class="details text-white">Save & Continue</a></button>
+                        </div>
+
+                    </div>
+
+                    <div id="Billing" class="tabcontent px-3">
+                        <h3>Billing & Shipping Details</h3>
+                    </div>
+
+                    <div id="KYC" class="tabcontent px-3">
+                        <h3>KYC Documents</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        document.getElementById("mySidenav").style.width = "75px";
+        document.body.style.marginLeft = "75px";
+        document.body.style.transition = "0.5s";
+
+
+        function toggleNav() {
+            var sidebar = document.getElementById("mySidenav");
+            var menus = document.querySelectorAll("#menu");
+            if (sidebar.style.width === "250px") {
+                sidebar.style.width = "75px";
+                document.body.style.marginLeft = "75px";
+                menus.forEach(menu => {
+                    menu.style.display = "none";
+                });
+            } else {
+                sidebar.style.width = "250px";
+                document.body.style.marginLeft = "250px";
+                menus.forEach(menu => {
+                    menu.style.display = "block";
+                });
+            }
+        }
+
+
+        function openDetails(evt, Company_Details) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(Company_Details).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
+
+</html>

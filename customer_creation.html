@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer creation</title>
+    <link rel="stylesheet" href="./customer.css">
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="./bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-1 bg-dark text-white sidenav" id="mySidenav" onclick="toggleNav()">
+                <img src="./images/ABS Logo.svg" class="mx-2 mt-4 mb-5" alt="">
+                <div class="wrap">
+                    <div class="d-flex"><img src="./images/Dashboard.svg" class="das_img" alt="404">
+                        <h5 class="mt-4 pt-2 ms-2" id="menu">Dashboard</h5>
+                    </div>
+                    <div class="d-flex"><img src="./images/Leads.svg" alt="404">
+                        <h5 class="mt-4 pt-2 ms-2 " id="menu">Leads</h5>
+                    </div>
+                    <div class="d-flex"><img src="./images/Customers.svg" alt="404">
+                        <h5 class="mt-4 pt-2 ms-2 " id="menu">Customers</h5>
+                    </div>
+                    <div class="d-flex"><img src="./images/Suppliers.svg" alt="404">
+                        <h5 class="mt-4 pt-2 ms-2 " id="menu">Suppliers</h5>
+                    </div>
+                    <div class="d-flex"><img src="./images/Vendor.svg" alt="404">
+                        <h5 class="mt-4 pt-2 ms-2 " id="menu">Vendor</h5>
+                    </div>
+                    <div class="d-flex"><img src="./images/Categories.svg" alt="404">
+                        <h5 class="mt-4 pt-2 ms-2 " id="menu">Categories</h5>
+                    </div>
+                    <div class="d-flex"><img src="./images/Inventory.svg" alt="404">
+                        <h5 class="mt-4 pt-2 ms-2 " id="menu">Inventory</h5>
+                    </div>
+                    <div class="d-flex"><img src="./images/Settings.svg" alt="404">
+                        <h5 class="mt-4 pt-2 ms-2 " id="menu">Settings</h5>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col p-0 bodybox">
+                <div class="container-fluid bg-light py-3 d-flex">
+                    <div class="d-flex">
+                        <img src="./images/Toggle.svg" alt="404" class="me-3">
+                        <form class="d-flex">
+                            <div class="input-group">
+                                <span class="input-group-text bg-white border-end-0"><i class="fa fa-search"></i></span>
+                                <input class="form-control me-2 border-start-0" type="text" placeholder="Search">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="d-flex ms-auto">
+                        <div class="">
+                            <img src="./images/Frame 35215.svg" alt="404">
+                            <img src="./images/Frame 35214.svg" alt="404">
+                        </div>
+                        <div class="dropdown mx-3">
+                            <button type="button" class="btn bg-white dropdown-toggle" data-bs-toggle="dropdown">
+                                <img src="./images/ABS Logo black.svg" alt="">ABS erp
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Link 1</a></li>
+                                <li><a class="dropdown-item" href="#">Link 2</a></li>
+                                <li><a class="dropdown-item" href="#">Link 3</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <button type="button" class="btn bg-white dropdown-toggle" data-bs-toggle="dropdown">
+                                <img src="./images/user 1.svg" alt="404"> Manoj kumar
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Link 1</a></li>
+                                <li><a class="dropdown-item" href="#">Link 2</a></li>
+                                <li><a class="dropdown-item" href="#">Link 3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <h6 class="m-3 pb-3">Customer Creation</h6>
+                    <div class="container-fluid">
+                        <div class="row bg-light p-3 row-cols-1 row-cols-md-2 row-cols-lg-5 g-3">
+                            <div class="col mt-1">
+                                <div
+                                    class="bg-white border rounded d-flex justify-content-center align-items-center p-2 pt-1">
+                                    <div><img src="./images/Frame 35311.svg" alt="404"></div>
+                                    <div class="text-center ms-4 mt-3">
+                                        <p class="mb-1">Total Customers</p>
+                                        <p class="mb-1">0</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mt-1">
+                                <div
+                                    class="bg-white border rounded d-flex justify-content-center align-items-center p-2 pt-1">
+                                    <div><img src="./images/Frame 35311 (1).svg" alt="404"></div>
+                                    <div class="text-center ms-4 mt-3">
+                                        <p class="mb-1">Active Customers</p>
+                                        <p class="mb-1">0</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mt-1">
+                                <div
+                                    class="bg-white border rounded d-flex justify-content-center align-items-center p-2 pt-1">
+                                    <div><img src="./images/Frame 35311 (2).svg" alt="404"></div>
+                                    <div class="text-center ms-4 mt-3">
+                                        <p class="mb-1">Inactive Customers</p>
+                                        <p class="mb-1">0</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mt-1">
+                                <div
+                                    class="bg-white border rounded d-flex justify-content-center align-items-center p-2 pt-1">
+                                    <div><img src="./images/Frame 36821.svg" alt="404"></div>
+                                    <div class="text-center ms-4 mt-3">
+                                        <p class="mb-1">Credit Customers</p>
+                                        <p class="mb-1">0</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mt-1">
+                                <div
+                                    class="bg-white border rounded d-flex justify-content-center align-items-center p-2 pt-1">
+                                    <div><img src="./images/Frame 36821.svg" alt="404"></div>
+                                    <div class="text-center ms-4 mt-3">
+                                        <p class="mb-1">Cash In Advance</p>
+                                        <p class="mb-1">0</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-3 d-flex">
+                        <div class="d-flex">
+                            <div>
+                                <form class="d-flex">
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-white border-end-0"><i
+                                                class="fa fa-search"></i></span>
+                                        <input class="form-control me-2 border-start-0" type="text"
+                                            placeholder="Search">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="border rounded mx-3 p-1 px-3"><a class="details"
+                                    href="./customer_creation_company_details.html"> + Add New Customer </a></div>
+                            <div class="border rounded bg-dark text-white p-1 px-3"> <img src="./images/upload.svg"
+                                    alt="404"> Import Customers</div>
+                        </div>
+                        <div class="d-flex ms-auto">
+                            <div class="border rounded mx-3 p-1 px-3"><img src="./images/printer.svg" class="icons"
+                                    alt="404"> Print
+                            </div>
+                            <div class="border rounded  p-1 px-3"><img src="./images/download.svg" class="icons"
+                                    alt="404"> Download
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid mt-3">
+                        <div style="overflow-x:auto;width: 1380px;" class="example">
+                            <table class="table border" id="customerTable">
+                                <thead class="table-secondary text-center">
+                                    <tr>
+                                        <th>
+                                            <form action=""><input type="checkbox" checked></form>
+                                        </th>
+                                        <th>Customer&nbspID</th>
+                                        <th>Customer&nbspCompany</th>
+                                        <th>Phone&nbspNumber</th>
+                                        <th>E-mail&nbspID</th>
+                                        <th class="add">Address</th>
+                                        <th>Authorised&nbspperson</th>
+                                        <th>Mobile&nbspNumber</th>
+                                        <th>E-mail&nbspID</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
+                                        <th>Created&nbspOn</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="customerTableBody">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        document.getElementById("mySidenav").style.width = "75px";
+        document.body.style.marginLeft = "75px";
+        document.body.style.transition = "0.5s";
+
+        function toggleNav() {
+            var sidebar = document.getElementById("mySidenav");
+            var menus = document.querySelectorAll("#menu");
+            if (sidebar.style.width === "250px") {
+                sidebar.style.width = "75px";
+                document.body.style.marginLeft = "75px";
+                menus.forEach(menu => {
+                    menu.style.display = "none";
+                });
+
+            } else {
+                sidebar.style.width = "250px";
+                document.body.style.marginLeft = "250px";
+                menus.forEach(menu => {
+                    menu.style.display = "block";
+                });
+            }
+        }
+
+
+        const customers = [
+            {
+                customerId: "ABSCUST01",
+                customerCompany: "ABShrms",
+                phoneNumber: "98765 43210",
+                emailId: "info@abshrms.com",
+                address: "ABS, North phase Industrial Estate, 42, 5th Cross St, Kalaimagal Nagar, Ekkatuthangal, Chennai, Tamil Nadu 600032",
+                authorizedPerson: "Augustin Raj",
+                mobileNumber: "98765 43210",
+                emailId2: "augustin@abshrms.com",
+                status: "Active",
+                action: "<img src='./images/icons8-three-dots-30.png' alt=''>",
+                createdOn: "10-sep-2023"
+            },
+            {
+                customerId: "ABSCUST02",
+                customerCompany: "ABSerp",
+                phoneNumber: "98765 43210",
+                emailId: "info@abserp.com",
+                address: "ABS, North phase Industrial Estate, 42, 5th Cross St, Kalaimagal Nagar, Ekkatuthangal, Chennai, Tamil Nadu 600032",
+                authorizedPerson: "Augustin Raj",
+                mobileNumber: "98765 43210",
+                emailId2: "augustin@abserp.com",
+                status: "Active",
+                action: "<img src='./images/icons8-three-dots-30.png' alt=''>",
+                createdOn: "10-sep-2023"
+            },
+            {
+                customerId: "ABSCUST03",
+                customerCompany: "ABShrms",
+                phoneNumber: "98765 43210",
+                emailId: "info@abshrms.com",
+                address: "ABS, North phase Industrial Estate, 42, 5th Cross St, Kalaimagal Nagar, Ekkatuthangal, Chennai, Tamil Nadu 600032",
+                authorizedPerson: "Augustin Raj",
+                mobileNumber: "98765 43210",
+                emailId2: "augustin@abshrms.com",
+                status: "Active",
+                action: "<img src='./images/icons8-three-dots-30.png' alt=''>",
+                createdOn: "10-sep-2023"
+            }
+        ];
+
+        const tbody = document.getElementById('customerTableBody');
+        customers.forEach(customer => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+            <td><input type="checkbox" checked></td>
+            <td>${customer.customerId}</td>
+            <td>${customer.customerCompany}</td>
+            <td>${customer.phoneNumber}</td>
+            <td>${customer.emailId}</td>
+            <td>${customer.address}</td>
+            <td>${customer.authorizedPerson}</td>
+            <td>${customer.mobileNumber}</td>
+            <td>${customer.emailId2}</td>
+            <td><button type="button" class="btn btn_color">${customer.status}</button></td>
+            <td>${customer.action}</td>
+            <td>${customer.createdOn}</td>
+        `;
+            tbody.appendChild(row);
+        });
+    </script>
+</body>
+
+</html>
